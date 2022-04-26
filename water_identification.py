@@ -100,7 +100,7 @@ def read_directory(directory_name):
 
 basepath = os.path.dirname(__file__)
 # 读取图像
-rawImage = (basepath+"\\water\\water (4)")
+rawImage = cv2.imread(basepath+'\\water\\water(88).jpg')
 width = 400
 reducedHeight = int(rawImage.shape[0] * width / rawImage.shape[1])
 resizeImage = cv2.resize(rawImage, (width, reducedHeight))
